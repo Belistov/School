@@ -1,0 +1,133 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Secular+One&display=swap');
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Secular One;
+}
+
+div, p, a{
+    font-family: Crimson Text;
+}
+
+.innermenu{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+.smallBox{
+    padding: 7px 7px 7px 7px;
+}
+
+body{
+    background: linear-gradient(white, rgb(121, 121, 255)) fixed;
+    margin: 0px;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 5%;
+    max-width: auto;
+
+    background-color: black;
+    color: darkcyan;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 5%;
+    max-width: auto;
+
+    background-color: black;
+    color: darkcyan;
+}
+
+
+.hald{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: auto;
+}
+
+.textHald{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.flex-blue {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: White;
+}
+
+.border{
+    display: flex;
+    flex-flow: row;
+    max-width: 65%;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+/* TEXTI */
+.textVin{
+    text-align: left;
+}
+.textMið{
+    text-align: center;
+}
+.textHæg{
+    text-align: right;
+}
+
+/* ÖRIN */
+.arrow{
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    font-size: 20px;
+    text-align: center;
+
+    color: black;
+
+
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+
+
+@media screen and (min-width: 37.5em) {
+
+    .textHald{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10%;
+    }
+
+    .innermenu, footer{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    
+    }
+    .smallBox{
+        padding: 7px 7px 7px 7px;
+    }
+}
+
+

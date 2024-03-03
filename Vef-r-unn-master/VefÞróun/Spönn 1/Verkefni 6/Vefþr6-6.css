@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200&family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Dosis:wght@200&family=Roboto+Mono:wght@300&display=swap');
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+h1, h2, h3{
+    font-family: Bebas Neue;
+}
+
+p{
+    font-family: Abel;
+}
+.miðja{
+    text-align: center;
+}
+
+.p_30{
+    font-size: 30px;
+}
+.p_20 .p_custom{
+    font-size: 20px;
+}
+.p_15{
+  font-size: 15px;
+}
+iframe{
+  size: auto;
+}
+.box{
+    display: flex;
+    grid-column: 1fr 1fr;
+}
+@media screen and (max-width: 700px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  iframe{
+      width:230px; 
+      height:180px;
+  }
+  .box{
+    display: flex;
+    grid-column: 1fr;
+  }
+  .p_custom{
+    font-size: 10px;
+  }
+}
+  
+/* Header */
+    .header {
+        padding: 60px;
+        text-align: center;
+        background: #111;
+        color: white;
+        font-size: 30px;
+    }
+
+/* Side Bar */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: transparent;
+    position: fixed;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 920px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 920px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Roboto+Mono:wght@300&display=swap');
+h1,h2,h3,h4{
+    font-family: Roboto Mono;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.inngangur{
+    background-image: linear-gradient(to bottom, darkred, black);
+    margin: 0%;
+}
+
+.arter{
+    display: flex;
+    flex-flow: column;
+    padding: 20px 20px 20px 20px;
+}
+
+.void{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    column-gap: 30px;
+}
+
+p{
+    color: aliceblue;
+    font-family: Dosis;
+}
+
+.bord{
+    padding-top: 20px;
+}
+
+.imger{
+    background-image: linear-gradient(to bottom, rgb(122, 11, 33), black);
+    
+}
+
+@media screen and (min-width: 48em){
+    .arter{
+       flex-flow: row; 
+    }
+    .void{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        margin: 10px 10px 10px 10px;
+        padding: 10px;
+        column-gap: 30px;
+    }
+}
+
+@media screen and (min-width: 80em){
+    .void{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 10px 10px 10px 10px;
+        column-gap: 30px;
+    }
+}

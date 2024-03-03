@@ -1,0 +1,118 @@
+/* Verkefni 1 */
+.borðiRauður{
+    border: 2px solid red;
+    margin: 20px;
+
+}
+.borðiBlár{
+    border: 4px dotted blue;
+    margin: 20px;
+
+}
+.spássía{
+    padding: 30px;
+}
+
+/* Verkefni 2 */
+.listi1 li{
+    padding: 1em;
+    margin: 1em;
+    border: 3px dashed green;
+}
+.listi2 li{
+    display: inline;
+    padding: 1em;
+    margin: 1em;
+    border: 3px dashed blue;
+}
+.listi3 li{
+    display: inline;
+    padding: 1em;
+    margin: 1em;
+    border: 3px dashed red;
+}
+
+/* Verkefni 3 */
+*{
+    box-sizing: border-box;
+}
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+.box{
+    float: left;
+    width: 50%;
+    border: 1px solid;
+}
+.dálkur-3{
+    float: left;
+    width: 33.333%;
+}
+
+div{
+    border: 1px solid ;
+}
+.imgR{
+    float: right;
+}
+.bakgrunnurTexta-1{
+    background-color: yellow;
+    text-align: center;
+}
+
+/* Verkefni 4 */
+.body {
+	max-width: 60em;
+	 margin: 0 auto;
+	 font-family: sans-serif;
+}
+.row{
+    display: flex;
+    flex-flow: row;
+
+}
+.col{
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.row div{
+    flex-grow: 1;
+}
+.textMiðja{
+    text-align: center; 
+    padding: 30px 0px 30px 0px;
+}
+
+footer p {
+    text-align: center;
+  }
+  
+  .gulur {
+      background-color: yellow; 
+  }
+  .raudur {
+      background-color: red; 
+  }
+  .graenn {
+      background-color: lime;
+  }
+  .blar {
+      background-color: cyan; 
+  }
+  .box2 {
+      font-size: 1.2em;
+      height: 5em;
+  }
+  
+  

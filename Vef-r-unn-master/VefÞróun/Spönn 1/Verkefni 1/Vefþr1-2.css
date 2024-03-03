@@ -1,0 +1,55 @@
+body{
+    border: 2px solid red;
+    margin: 50px;
+    padding: 30px;
+}
+
+/* Litir */
+.rauður{
+    color: red
+}
+.blár{
+    color: blue
+}
+.grænn{
+    color: green
+}
+
+/* Fontar */
+.areal{
+    font-family: Arial;
+}
+
+/* Extra */
+.tuttuguPX{
+    margin-left: 20px;
+}
+.undirstrikað{
+    text-decoration: underline;
+}
+
+/* Mix */
+.bilblár{
+    color: blue;
+    margin-left: 20px;
+}
+.þykkrauður{
+    color: red;
+    font-weight: bold;
+}
+.mjórblár{
+    color: blue;
+    font-weight: italic;
+    font-family: italic;
+}
+
+/* Link */
+a:visited{
+    color: transparent;
+}
+a:hover{
+    color: darkblue;
+}
+a:active{
+    color: red;
+}

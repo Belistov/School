@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ferd.css">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML Heimanám</title>
+</head>
+    <!--==========================================-->
+    <!--|             Splash Screen              |--> <!-- Hef animation sem byrjar með bakgrunn hæð á 100vw og svo fer hæð í 0vw -->
+    <!--==========================================--> <!-- Fyrir súlurnar er ég bara að stækka og minka þær -->
+    <div class="landing-page">
+      <div class="bleikur"></div>
+      <div class="bleikur1"></div>
+      <div class="bleikur2"></div>
+    </div>
+    
+
+<body>
+    <!--==========================================-->
+    <!--|               Drop Down                |--> <!-- Til að vera herinskilinn ég man ekki hvernig þetta virkar -->
+    <!--==========================================-->
+            
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+            <div class="nav-title">
+                Tíma Ferð
+            </div>
+            </div>
+            <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            </div>
+            
+            <div class="nav-links">
+            <a href="" target="_blank">Skoða</a>
+            <a href="" target="_blank">Meira</a>
+            <a href="" target="_blank">Panta</a>
+            </div>
+        </div>
+    <!--==========================================-->
+    <!--|               Hero Image               |--> <!-- hef bara mynd sem hefur smá skiggingu á sér og texta -->
+    <!--==========================================-->
+
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size:50px">Tíma Ferð</h1>
+        <p>Skoðaðu allt sem hefur nokkurntíman verið</p>
+        <button><a href="#id">Panta</a></button>
+      </div>
+    </div>
+
+    <!--==========================================-->
+    <!--|               Panat kassar             |--> <!-- Hérna hef ég bara myndir sem eru að fara fyrir ofan hvert aðra -->
+    <!--==========================================-->
+
+                                                                                    <br>
+                                                                                    <br>        
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="https://picsum.photos/id/684/600/400" style="width:100%">
+            <div class="text">Frakkland</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="https://picsum.photos/id/684/600/400" style="width:100%">
+            <div class="text">Þýskaland</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="https://picsum.photos/id/684/600/400" style="width:100%">
+            <div class="text">Ísland</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="https://picsum.photos/id/684/600/400" style="width:100%">
+            <div class="text">Japan</div>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span> 
+          </div>
+
+                                                                                    <br>
+                                                                                    <br>
+    <!--==========================================-->
+    <!--|           Tíma Tafla + Forms           |--> <!-- er bara með basic ass töflu -->
+    <!--==========================================-->
+      <table>
+        <caption id="id">Skoða og Panta</caption>
+        <thead>
+          <tr>
+            <th scope="col">Staður</th>
+            <th scope="col">Tími [DD/MM/YY]</th>
+            <th scope="col">Verða [ISK]</th>
+            <th scope="col">Panta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Account">Frakkland</td>
+            <td data-label="Due Date">08/06/1886</td>
+            <td data-label="Amount">40.500</td>
+            <td data-label="Period">
+                <button> Panta </button>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Account">Þýskaland</td>
+            <td data-label="Due Date">30/01/1933</td>
+            <td data-label="Amount">65.500</td>
+            <td data-label="Period">
+                <button> Panta </button>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Account">Ísland</td>
+            <td data-label="Due Date">12/08/1052</td>
+            <td data-label="Amount">105.000</td>
+            <td data-label="Period">
+                <button> Panta </button>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Account">Japan</td>
+            <td data-label="Due Date">07/06/952</td>
+            <td data-label="Amount">250.500</td>
+            <td data-label="Period">
+                <button> Panta </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <div class="box">
+        <a class="button" href="#popup1">Let me Pop up</a>
+      </div>
+
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <h2>Svaraðu Forminnu</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+
+            <div class="form">
+              <div class="title">Velkominn</div>
+              <div class="subtitle">Filtu inn til að panta!</div>
+              <div class="input-container ic1">
+                <input id="firstname" class="input" type="text" placeholder=" " />
+                <div class="cut"></div>
+                <label for="firstname" class="placeholder">Fullt nafn</label>
+              </div>
+      
+              <div class="input-container ic2">
+                <input id="phone" class="input" type="text" placeholder=" " />
+                <div class="cut"></div>
+                <label for="phone" class="placeholder">Sími</label>
+              </div>
+      
+              <div class="input-container ic2">
+                <input id="email" class="input" type="email" placeholder=" " />
+                <div class="cut cut-short"></div>
+                <label for="email" class="placeholder">Email</>
+              </div>
+      
+              <div class="input-container ic2">
+                <input id="date" class="input" type="date" placeholder=" " />
+                <div class="cut"></div>
+                <label for="date" class="placeholder">Date</label>
+              </div>
+      <br>
+              <div>
+                <input type="radio" id="de" name="fav_language" value="DE">
+                <label for="germany" class="auka-p">Þýskaland</label><br>
+                
+                <input type="radio" id="fk" name="fav_language" value="FK">
+                <label for="french" class="auka-p">Frakkland</label><br>
+                
+                <input type="radio" id="is" name="fav_language" value="IS">
+                <label for="iceland" class="auka-p">Ísland</label><br>
+              
+                <input type="radio" id="ja" name="fav_language" value="JA">
+                <label for="japan" class="auka-p">Japan</label><br>
+              </div>
+              <button type="text" class="submit">submit</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    <footer>
+      <div class="social">
+          <a href="https://steamcommunity.com/id/BakuPyro/"><span class="icon-steam"></span></a>
+          <a href="https://www.instagram.com/"><span class="icon-instagram"></span></a>
+          <a href="https://www.facebook.com"><span class="icon-facebook"></span></a>
+          <a href="https://www.youtube.com"><span class="icon-play"></span></a>
+          <a href="https://github.com"><span class="icon-github"></span></a>
+      </div>
+      <br>
+      
+      <img class="midja" src="path968.png" alt="">
+
+    </footer>
+    <!--==========================================-->
+    <!--|                  Script                |--> <!-- Hef enga hugmynd hvað þetta gerir en það hjáplar með image slide show kjaftæðið -->
+    <!--==========================================-->
+        <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+        </script>
+
+</body>
+</html>
